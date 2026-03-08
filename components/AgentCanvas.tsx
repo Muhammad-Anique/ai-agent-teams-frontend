@@ -22,7 +22,7 @@ function drawSpeechBubble(
   R: number,              // agent radius
   text: string,
   color: string,
-  W: number, _H: number
+  W: number, _H: number // eslint-disable-line @typescript-eslint/no-unused-vars
 ) {
   const maxBW = Math.min(W * 0.23, 210);
   const lH = 13;

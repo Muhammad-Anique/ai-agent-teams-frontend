@@ -85,7 +85,7 @@ export default function AgentCard({ agentId, agents, onClose }: Props) {
                 <p className="text-[10px] font-semibold uppercase tracking-wider mb-1" style={{ color: "#d97706" }}>
                   💭 Currently thinking
                 </p>
-                <p className="text-xs italic" style={{ color: "#92400e" }}>"{runtime.thought}"</p>
+                <p className="text-xs italic" style={{ color: "#92400e" }}>&quot;{runtime.thought}&quot;</p>
               </div>
             )}
             {(runtime.state === "talking" && runtime.speechMessage) && (
@@ -93,7 +93,7 @@ export default function AgentCard({ agentId, agents, onClose }: Props) {
                 <p className="text-[10px] font-semibold uppercase tracking-wider mb-1" style={{ color: "#2563eb" }}>
                   💬 Currently saying
                 </p>
-                <p className="text-xs" style={{ color: "#1e40af" }}>"{runtime.speechMessage.slice(0, 100)}…"</p>
+                <p className="text-xs" style={{ color: "#1e40af" }}>&quot;{runtime.speechMessage.slice(0, 100)}…&quot;</p>
               </div>
             )}
 
